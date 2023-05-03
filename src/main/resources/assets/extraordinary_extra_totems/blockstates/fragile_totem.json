@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "extraordinary_extra_totems:block/fragile_totem"
+    },
+    "facing=south": {
+      "model": "extraordinary_extra_totems:block/fragile_totem",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "extraordinary_extra_totems:block/fragile_totem",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "extraordinary_extra_totems:block/fragile_totem",
+      "y": 90
+    }
+  }
+}

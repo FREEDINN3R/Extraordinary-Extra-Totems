@@ -1,0 +1,19 @@
+{
+  "extraordinary_extra_totems.item_group_name": "Tótems Extraordinarios Extras",
+
+  "item.extraordinary_extra_totems.totem_remnants": "Restos de Tótem",
+  "item.extraordinary_extra_totems.ominous_totem_remnants": "Restos de Tótem Siniestro",
+
+  "block.extraordinary_extra_totems.totem_of_undying": "Tótem de la Inmortalidad",
+  "block.extraordinary_extra_totems.unstable_totem": "Tótem de la Inmortalidad Inestable",
+  "block.extraordinary_extra_totems.unreliable_totem": "Tótem de la Inmortalidad Poco Confiable",
+  "block.extraordinary_extra_totems.confused_totem": "Tótem de la Inmortalidad Confuso",
+  "block.extraordinary_extra_totems.strange_totem": "Tótem de la Inmortalidad Extraño",
+  "block.extraordinary_extra_totems.fragile_totem": "Tótem de la Inmortalidad Frágil",
+  "block.extraordinary_extra_totems.ominous_totem": "Tótem de la Inmortalidad Siniestro",
+
+  "effect.extraordinary_extra_totems.deaths_favor": "Favor de la Muerte",
+
+  "extraordinary_extra_totems.use_ominous_totem": "El tótem siniestro se activa",
+  "extraordinary_extra_totems.death_stare": "La Muerte te mira fijamente"
+}

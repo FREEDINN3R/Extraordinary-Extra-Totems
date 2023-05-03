@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "extraordinary_extra_totems:item/confused_totem"
+  }
+}

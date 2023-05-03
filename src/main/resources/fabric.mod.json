@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "extraordinary_extra_totems",
+	"version": "${version}",
+	"name": "Extraordinary Extra Totems",
+	"description": "This mod will bring a few extraordinary totems to your world. Find them, craft them, use them, or keep them as a treasure!",
+	"authors": [
+		"Dinner"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/extraordinary_extra_totems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.freedinner.extraordinary_extra_totems.ExtraordinaryExtraTotems"
+		],
+		"client": [
+			"net.freedinner.extraordinary_extra_totems.ExtraordinaryExtraTotemsClient"
+		]
+	},
+	"mixins": [
+		"extraordinary_extra_totems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

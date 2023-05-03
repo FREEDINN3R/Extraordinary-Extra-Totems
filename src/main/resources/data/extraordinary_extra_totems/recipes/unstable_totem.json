@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "extraordinary_extra_totems:totem_remnants"
+    },
+    "X": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "result": {
+    "item": "extraordinary_extra_totems:unstable_totem"
+  }
+}

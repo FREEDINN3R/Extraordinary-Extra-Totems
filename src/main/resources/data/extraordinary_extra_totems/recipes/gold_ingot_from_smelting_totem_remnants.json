@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 4.0,
+  "group": "gold_ingot",
+  "ingredient": {
+    "item": "extraordinary_extra_totems:totem_remnants"
+  },
+  "result": "minecraft:gold_ingot"
+}

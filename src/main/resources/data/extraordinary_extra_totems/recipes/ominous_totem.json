@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "minecraft:combat",
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "extraordinary_extra_totems:ominous_totem_remnants"
+    },
+    "X": {
+      "tag": "extraordinary_extra_totems:regular_totems"
+    }
+  },
+  "result": {
+    "item": "extraordinary_extra_totems:ominous_totem"
+  }
+}

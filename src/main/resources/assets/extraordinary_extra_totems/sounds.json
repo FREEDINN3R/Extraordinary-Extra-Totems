@@ -1,0 +1,14 @@
+{
+  "use_ominous_totem": {
+    "subtitle": "extraordinary_extra_totems.use_ominous_totem",
+    "sounds": [
+      "extraordinary_extra_totems:use_ominous_totem"
+    ]
+  },
+  "death_stare": {
+    "subtitle": "extraordinary_extra_totems.death_stare",
+    "sounds": [
+      "extraordinary_extra_totems:death_stare"
+    ]
+  }
+}

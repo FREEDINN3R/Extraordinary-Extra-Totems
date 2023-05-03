@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:totem_of_undying",
+    "extraordinary_extra_totems:unstable_totem",
+    "extraordinary_extra_totems:confused_totem",
+    "extraordinary_extra_totems:fragile_totem",
+    "extraordinary_extra_totems:strange_totem",
+    "extraordinary_extra_totems:unreliable_totem"
+  ]
+}
