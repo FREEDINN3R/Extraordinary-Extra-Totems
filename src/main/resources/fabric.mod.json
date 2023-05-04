@@ -3,7 +3,7 @@
 	"id": "extraordinary_extra_totems",
 	"version": "${version}",
 	"name": "Extraordinary Extra Totems",
-	"description": "This mod will bring a few extraordinary totems to your world. Find them, craft them, use them, or keep them as a treasure!",
+	"description": "This mod will bring a few extraordinary Totems of Undying to your world. Find them, craft them, use them, or keep them as a treasure!",
 	"authors": [
 		"Dinner"
 	],
@@ -11,7 +11,7 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "MIT",
+	"license": "GPLv3",
 	"icon": "assets/extraordinary_extra_totems/icon.png",
 	"environment": "*",
 	"entrypoints": {
