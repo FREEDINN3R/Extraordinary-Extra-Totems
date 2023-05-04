@@ -5,11 +5,11 @@
 	"name": "Extraordinary Extra Totems",
 	"description": "This mod will bring a few extraordinary Totems of Undying to your world. Find them, craft them, use them, or keep them as a treasure!",
 	"authors": [
-		"Dinner"
+		"FREEDINNER"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/extraordinary-extra-totems",
+		"sources": "https://github.com/FREEDINN3R/Extraordinary-Extra-Totems"
 	},
 	"license": "GPLv3",
 	"icon": "assets/extraordinary_extra_totems/icon.png",
