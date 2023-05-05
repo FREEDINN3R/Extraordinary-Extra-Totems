@@ -1,33 +1,39 @@
 # Extraordinary Extra Totems
-This is a small Fabric mod which will bring a few new Totems of Undying to your world. Each of the new 5 craftable totems will provide you with the same utility as a regular Totem of Undying, but with some downsides. And the last, 6th totem can only be crafted out of rare pieces scattered around the world.
+This Fabric mod introduces six unique Totems of Undying to your world, each with its own strengths and weaknesses. Collect Totem Remnants scattered all around the world, craft the new totems, and use them in battle! And after a long journey, why don't you display them in your treasure room as stunning 3D models?
 
-![all totems are placed in a row](/images/image1.png)
+![all totems placed in a row](/images/image1.png)
 
 ## Items
-To craft the new totems, you will need to find the new item called Totem Remnants.
+To get started, you'll need to get your hands on a new item called Totem Remnants.
 
 ![totem remnants lie on the ground near evoker](/images/image2.png)
 
-You may get them by activating any Totem of Undying (both vanilla and new ones), killing Evokers, looting structure chests, or trading with the Wandering Trader.
-### New recipes
+Totem Remnants can be obtained in a variety of ways, such as:
+* Activating any Totem of Undying (both vanilla and new ones)
+* Killing Evokers
+* Looting chests in structures
+* Trading with Wandering Traders
+
+### Crafting recipes
 
 ![crafting recipe 8 totem remnants plus 1 of any mineral equals new totem](/images/image4.png)
 
-Using 8 Totem Remnants and any mineral, you will be able to craft one of the new totems. These 5 can be crafted in such a way:
+Once you've obtained enough Totem Remnants, you will be able to craft any of the five new totems, which include:
 * Unstable Totem of Undying
 * Unreliable Totem of Undying
 * Confused Totem of Undying
 * Strange Totem of Undying
 * Fragile Totem of Undying
 
-While it seems like a good way to provide renewable totems, keep in mind that each has its own downsides. For example, the Unreliable Totem of Undying is quite... unreliable, and thus works only in 80% of times. As for the others, the player will have to guess for themsleves what downsides they have, based on their names.
+While it sounds like a good way to get some additional totems, each has its own downsides, so be sure to choose wisely. For example, the Unreliable Totem of Undying only works in 80% of the times, which explains its name. As for the other totems, well... You'll have to find out for yourself!
+
+*But wait, that's only five totems. What about the last one?*
 
 ![crafting recipe 4 ominous totem remnants plus 1 of any regular totem equals ominous totem](/images/image5.png)
 
-As for the last, 6th totem, its crafting recipe requires special material called Ominous Totem Remnants. These can only be rarely found in Nether structures, and because of this, the player will have to spend some time travelling before finally getting this totem. When used, this totem will provide its user with some powerful effect, as well as a new status effect.
-## Effect
-
-After activating the Ominous Totem of Undying, the player will be granted a new status effect called Death's Favor. While under this effect, the player becomes nearly immortal - that is, in most circumstances their health cannot drop below 1 HP. Indeed, this sounds like a great deal, which will greatly benefit your gameplay and has no seriuos downsides.
+To craft the Ominous Totem of Undying, you'll need a regular totem and a few Ominous Totem Remnants, which can only be found in Nether structures. Because of that, you will have to spend some time traversing the world before getting enough remnants to craft this totem. Totally worth the effort, though: when activated, it provides you with a custom status effect in addition to some strong vanilla effects.
+## Effects
+Upon activating the Ominous Totem of Undying, the player is granted a new status effect called Death's Favor. While under this effect, the player becomes nearly immortal, since in most circumstances, their health won't drop below 1 HP. This effect is highly beneficial, making your life so much easier without any serious downsides.
 
 ...right?
 
@@ -36,11 +42,6 @@ Did somebody say placeable totems?
 
 ![totem of undying placed on a shelf](/images/image6.png)
 
-That's right, with this mod, any totem can be placed on the ground as a 3D model, which makes it way easier to show 'em off to your friends. However, placing your totem on the groung while fighting would be quite unfortunate, so keep in mind that you can only do that while sneaking.
+That's right, any totem can now be placed on the ground as a 3D model! It's definitely easier to show them off to everyone else in this way. However, placing your totem on the groung during a fight would be quite unfortunate, so keep in mind that you can only do that while sneaking.
 
-# FAQ
-Actually, nobody asked me anything yet
-So take a look at this spider!!
-/|\\( ;,;)/|\
-
-## [Go check this mod out on CurseForge!](https://www.curseforge.com/minecraft/mc-mods/extraordinary-extra-totems)
+## [Go check it out on CurseForge!](https://www.curseforge.com/minecraft/mc-mods/extraordinary-extra-totems)
