@@ -1,5 +1,5 @@
 # Extraordinary Extra Totems
-This Fabric mod introduces six unique Totems of Undying to your world, each with its own strengths and weaknesses. Collect Totem Remnants scattered all around the world, craft the new totems, and use them in battle! And after a long journey, why don't you display them in your treasure room as stunning 3D models?
+This Fabric mod introduces six unique Totems of Undying, each with its own strengths and weaknesses. Collect Totem Remnants scattered all around the world, craft the new totems, and use them in battle! And after a long journey, why don't you display them in your treasure room as stunning 3D models?
 
 ![all totems placed in a row](/images/image1.png)
 
@@ -31,7 +31,7 @@ While it sounds like a good way to get some additional totems, each has its own 
 
 ![crafting recipe 4 ominous totem remnants plus 1 of any regular totem equals ominous totem](/images/image5.png)
 
-To craft the Ominous Totem of Undying, you'll need a regular totem and a few Ominous Totem Remnants, which can only be found in Nether structures. Because of that, you will have to spend some time traversing the world before getting enough remnants to craft this totem. Totally worth the effort, though: when activated, it provides you with a custom status effect in addition to some strong vanilla effects.
+To craft the Ominous Totem of Undying, you'll need any regular totem and a few Ominous Totem Remnants, which can only be found in Nether structures. Because of that, you will have to spend some time traversing the world before getting enough remnants to craft this totem. Totally worth the effort, though: when activated, it provides you with a custom status effect in addition to some strong vanilla effects.
 ## Effects
 Upon activating the Ominous Totem of Undying, the player is granted a new status effect called Death's Favor. While under this effect, the player becomes nearly immortal, since in most circumstances, their health won't drop below 1 HP. This effect is highly beneficial, making your life so much easier without any serious downsides.
 
