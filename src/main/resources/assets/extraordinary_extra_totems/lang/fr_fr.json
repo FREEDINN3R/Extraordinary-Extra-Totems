@@ -12,6 +12,8 @@
   "block.extraordinary_extra_totems.fragile_totem": "Totem fragile de l'immortalité",
   "block.extraordinary_extra_totems.ominous_totem": "Totem Ominous de l'immortalité",
 
+  "item.extraordinary_extra_totems.shift_item.tooltip": "Peut être placé en étant accroupi",
+
   "effect.extraordinary_extra_totems.deaths_favor": "Faveur de la Mort",
 
   "extraordinary_extra_totems.use_ominous_totem": "Le totem Ominous s'active",

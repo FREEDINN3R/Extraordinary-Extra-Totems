@@ -12,6 +12,8 @@
   "block.extraordinary_extra_totems.fragile_totem": "Totem Fragile dell'Immortalità",
   "block.extraordinary_extra_totems.ominous_totem": "Totem Inquietante dell'Immortalità",
 
+  "item.extraordinary_extra_totems.shift_item.tooltip": "Posizionabile mentre si sta abbassati",
+
   "effect.extraordinary_extra_totems.deaths_favor": "Favore della Morte",
 
   "extraordinary_extra_totems.use_ominous_totem": "Il totem inquietante si attiva",

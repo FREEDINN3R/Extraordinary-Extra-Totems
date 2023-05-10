@@ -12,6 +12,8 @@
   "block.extraordinary_extra_totems.fragile_totem": "Zerbrechlicher Totem der Unsterblichkeit",
   "block.extraordinary_extra_totems.ominous_totem": "Unheilvoller Totem der Unsterblichkeit",
 
+  "item.extraordinary_extra_totems.shift_item.tooltip": "Kann beim Schleichen platziert werden",
+
   "effect.extraordinary_extra_totems.deaths_favor": "Gunst des Todes",
 
   "extraordinary_extra_totems.use_ominous_totem": "Unheilvoller Totem aktiviert",

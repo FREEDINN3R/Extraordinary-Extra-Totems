@@ -12,6 +12,8 @@
   "block.extraordinary_extra_totems.fragile_totem": "Tótem de la Inmortalidad Frágil",
   "block.extraordinary_extra_totems.ominous_totem": "Tótem de la Inmortalidad Siniestro",
 
+  "item.extraordinary_extra_totems.shift_item.tooltip": "Puede colocarse al agacharse",
+
   "effect.extraordinary_extra_totems.deaths_favor": "Favor de la Muerte",
 
   "extraordinary_extra_totems.use_ominous_totem": "El tótem siniestro se activa",

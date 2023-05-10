@@ -12,6 +12,8 @@
   "block.extraordinary_extra_totems.fragile_totem": "Хрупкий тотем бессмертия",
   "block.extraordinary_extra_totems.ominous_totem": "Мрачный тотем бессмертия",
 
+  "item.extraordinary_extra_totems.shift_item.tooltip": "Может быть поставлен при нажатии Shift",
+
   "effect.extraordinary_extra_totems.deaths_favor": "Услуга Смерти",
 
   "extraordinary_extra_totems.use_ominous_totem": "Мрачный тотем активирован",
