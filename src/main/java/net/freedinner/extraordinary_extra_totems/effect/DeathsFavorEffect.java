@@ -40,7 +40,7 @@ public class DeathsFavorEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if (entity.world.isClient()) {
+        if (entity.getWorld().isClient()) {
             return;
         }
 
@@ -64,7 +64,7 @@ public class DeathsFavorEffect extends StatusEffect {
                 }
 
                 float damageAmount = player.getMaxHealth() + player.getAbsorptionAmount() - 0.5f;
-                player.damage(player.world.getDamageSources().outOfWorld(), damageAmount);
+                player.damage(player.getWorld().getDamageSources().outOfWorld(), damageAmount);
             }
 
             if (deathStareCooldown <= 0) {
@@ -98,13 +98,13 @@ public class DeathsFavorEffect extends StatusEffect {
         else {
             if (random.nextInt(DEATH_STARE_CHANCE_VALUE) <= amplifier) {
                 float damageAmount = entity.getMaxHealth() + entity.getAbsorptionAmount() - 0.5f;
-                entity.damage(entity.world.getDamageSources().outOfWorld(), damageAmount);
+                entity.damage(entity.getWorld().getDamageSources().outOfWorld(), damageAmount);
             }
         }
     }
 
     private void playDeathStareSound(LivingEntity entity) {
-        entity.world.playSound(null, entity.getBlockPos(), ModSounds.DEATH_STARE, SoundCategory.MASTER, 2f, 1f);
+        entity.getWorld().playSound(null, entity.getBlockPos(), ModSounds.DEATH_STARE, SoundCategory.MASTER, 2f, 1f);
     }
 
     @Override

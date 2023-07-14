@@ -4,9 +4,8 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import net.freedinner.extraordinary_extra_totems.ExtraordinaryExtraTotems;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.DrawableHelper;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.render.GameRenderer;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
 
@@ -42,7 +41,7 @@ public class DeathStareHudOverlay implements HudRenderCallback {
     }
 
     @Override
-    public void onHudRender(MatrixStack matrixStack, float tickDelta) {
+    public void onHudRender(DrawContext drawContext, float tickDelta) {
         if (counter < 0) {
             return;
         }
@@ -62,7 +61,7 @@ public class DeathStareHudOverlay implements HudRenderCallback {
         RenderSystem.setShaderColor(1.0f, 1.0f, 1.0f, alpha);
         RenderSystem.setShaderTexture(0, OMINOUS_TOTEM);
 
-        DrawableHelper.drawTexture(matrixStack, centerX - 100, centerY - 100, 0, 0,
+        drawContext.drawTexture(OMINOUS_TOTEM, centerX - 100, centerY - 100, 0, 0,
                 200, 200, 200, 200);
 
         RenderSystem.disableBlend();

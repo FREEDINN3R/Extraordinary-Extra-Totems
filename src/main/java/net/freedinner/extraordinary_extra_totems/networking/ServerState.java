@@ -57,7 +57,7 @@ public class ServerState extends PersistentState {
     }
 
     public static PlayerState getPlayerState(LivingEntity player) {
-        ServerState serverState = getServerState(player.world.getServer());
+        ServerState serverState = getServerState(player.getWorld().getServer());
         PlayerState playerState = serverState.playerStatesHashMap.computeIfAbsent(player.getUuid(), uuid -> new PlayerState());
         serverState.markDirty();
         return playerState;

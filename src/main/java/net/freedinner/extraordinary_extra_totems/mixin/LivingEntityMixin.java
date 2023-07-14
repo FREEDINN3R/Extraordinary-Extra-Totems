@@ -96,7 +96,7 @@ public abstract class LivingEntityMixin {
             entity.addStatusEffect(new StatusEffectInstance(ModEffects.DEATHS_FAVOR, -1, deathsFavorLevel + 1, false, false));
         }
 
-        entity.world.sendEntityStatus(entity, (byte)35);
+        entity.getWorld().sendEntityStatus(entity, (byte)35);
         info.setReturnValue(true);
     }
 

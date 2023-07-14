@@ -13,22 +13,14 @@ import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static final Item TOTEM_REMNANTS = registerItem("totem_remnants",
-            new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)),
-            ModItemGroups.EXTRAORDINARY_EXTRA_TOTEMS, ItemGroups.INGREDIENTS);
+            new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item OMINOUS_TOTEM_REMNANTS = registerItem("ominous_totem_remnants",
-            new Item(new FabricItemSettings().rarity(Rarity.RARE).fireproof()),
-            ModItemGroups.EXTRAORDINARY_EXTRA_TOTEMS, ItemGroups.INGREDIENTS);
+            new Item(new FabricItemSettings().rarity(Rarity.RARE).fireproof()));
     public static final Item OMINOUS_TOTEM_ACTIVATED = registerItem("ominous_totem_activated",
             new Item(new FabricItemSettings()));
 
-    private static Item registerItem(String name, Item item, ItemGroup... groups) {
-        Item registeredItem = Registry.register(Registries.ITEM, new Identifier(ExtraordinaryExtraTotems.MOD_ID, name), item);
-
-        for (ItemGroup group : groups) {
-            ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-        }
-
-        return registeredItem;
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, new Identifier(ExtraordinaryExtraTotems.MOD_ID, name), item);
     }
 
     public static void registerItems() {

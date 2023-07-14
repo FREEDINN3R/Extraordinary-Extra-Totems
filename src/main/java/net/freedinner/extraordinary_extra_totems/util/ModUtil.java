@@ -5,7 +5,8 @@ import net.freedinner.extraordinary_extra_totems.block.custom.TotemBlock;
 import net.freedinner.extraordinary_extra_totems.item.ModItems;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -45,10 +46,14 @@ public class ModUtil {
 
     public static Block getDefaultTotemBlock() {
         return new TotemBlock(FabricBlockSettings
-                .of(Material.METAL)
+                .of()
+                .mapColor(MapColor.GOLD)
+                .strength(0.5F)
+                .pistonBehavior(PistonBehavior.DESTROY)
                 .sounds(BlockSoundGroup.NETHERITE)
                 .breakInstantly()
                 .noBlockBreakParticles()
+                .solid()
                 .nonOpaque());
     }
 

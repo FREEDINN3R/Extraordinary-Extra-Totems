@@ -40,7 +40,7 @@ public class UnstableTotemBlockItem extends PlaceableOnShiftBlockItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if(!attacker.world.isClient) {
+        if(!attacker.getWorld().isClient) {
             explode(stack, attacker);
         }
 
@@ -49,7 +49,7 @@ public class UnstableTotemBlockItem extends PlaceableOnShiftBlockItem {
 
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
-        if(!miner.world.isClient) {
+        if(!miner.getWorld().isClient) {
             explode(stack, miner);
         }
 
@@ -57,7 +57,7 @@ public class UnstableTotemBlockItem extends PlaceableOnShiftBlockItem {
     }
 
     private void explode(ItemStack stack, LivingEntity entity) {
-        World world = entity.world;
+        World world = entity.getWorld();
         double x = entity.getX();
         double y = entity.getY();
         double z = entity.getZ();

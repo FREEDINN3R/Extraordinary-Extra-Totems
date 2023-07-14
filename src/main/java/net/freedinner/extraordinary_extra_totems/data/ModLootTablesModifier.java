@@ -5,13 +5,17 @@ import net.freedinner.extraordinary_extra_totems.block.ModBlocks;
 import net.freedinner.extraordinary_extra_totems.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.loot.LootPool;
+import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.KilledByPlayerLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.LootingEnchantLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.entity.EntityEquipmentPredicate;
+import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.util.Identifier;
 
 public class ModLootTablesModifier {

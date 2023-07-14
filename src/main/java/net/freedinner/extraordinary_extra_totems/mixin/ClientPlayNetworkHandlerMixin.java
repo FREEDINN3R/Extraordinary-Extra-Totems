@@ -1,5 +1,6 @@
 package net.freedinner.extraordinary_extra_totems.mixin;
 
+import net.freedinner.extraordinary_extra_totems.ExtraordinaryExtraTotems;
 import net.freedinner.extraordinary_extra_totems.block.ModBlocks;
 import net.freedinner.extraordinary_extra_totems.item.ModItems;
 import net.freedinner.extraordinary_extra_totems.sound.ModSounds;
@@ -9,6 +10,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundEvent;
