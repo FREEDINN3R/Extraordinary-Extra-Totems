@@ -4,16 +4,13 @@
   "item.extraordinary_extra_totems.totem_remnants": "Resztki Totemów",
   "item.extraordinary_extra_totems.ominous_totem_remnants": "Zagadkowe resztki Totemów",
 
-  "block.extraordinary_extra_totems.totem_of_undying": "Totem nieśmiertelności",
-  "block.extraordinary_extra_totems.unstable_totem": "Niestabilny totem nieśmiertelności",
-  "block.extraordinary_extra_totems.unreliable_totem": "Niewiarygodny totem nieśmiertelności",
-  "block.extraordinary_extra_totems.confused_totem": "Zdezorientowany totem nieśmiertelności",
-  "block.extraordinary_extra_totems.strange_totem": "Dziwny totem nieśmiertelności",
-  "block.extraordinary_extra_totems.fragile_totem": "Kruszący się totem nieśmiertelności",
-  "block.extraordinary_extra_totems.ominous_totem": "Zagadkowy totem nieśmiertelności",
-
-  "item.extraordinary_extra_totems.shift_item.tooltip": "Można umieścić, kiedy się kradnie",
-
+  "item.extraordinary_extra_totems.totem_of_undying": "Totem nieśmiertelności",
+  "item.extraordinary_extra_totems.unstable_totem": "Niestabilny totem nieśmiertelności",
+  "item.extraordinary_extra_totems.unreliable_totem": "Niewiarygodny totem nieśmiertelności",
+  "item.extraordinary_extra_totems.confused_totem": "Zdezorientowany totem nieśmiertelności",
+  "item.extraordinary_extra_totems.strange_totem": "Dziwny totem nieśmiertelności",
+  "item.extraordinary_extra_totems.fragile_totem": "Kruszący się totem nieśmiertelności",
+  "item.extraordinary_extra_totems.ominous_totem": "Zagadkowy totem nieśmiertelności",
   "effect.extraordinary_extra_totems.deaths_favor": "Faworyt śmierci",
 
   "extraordinary_extra_totems.use_ominous_totem": "Aktywacja zagadkowego totemu",

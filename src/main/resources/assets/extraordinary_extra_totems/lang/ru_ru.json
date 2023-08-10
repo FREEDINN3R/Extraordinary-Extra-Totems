@@ -4,16 +4,13 @@
   "item.extraordinary_extra_totems.totem_remnants": "Остатки тотема",
   "item.extraordinary_extra_totems.ominous_totem_remnants": "Мрачные остатки тотема",
 
-  "block.extraordinary_extra_totems.totem_of_undying": "Тотем бессмертия",
-  "block.extraordinary_extra_totems.unstable_totem": "Нестабильный тотем бессмертия",
-  "block.extraordinary_extra_totems.unreliable_totem": "Ненадежный тотем бессмертия",
-  "block.extraordinary_extra_totems.confused_totem": "Непонятный тотем бессмертия",
-  "block.extraordinary_extra_totems.strange_totem": "Странный тотем бессмертия",
-  "block.extraordinary_extra_totems.fragile_totem": "Хрупкий тотем бессмертия",
-  "block.extraordinary_extra_totems.ominous_totem": "Мрачный тотем бессмертия",
-
-  "item.extraordinary_extra_totems.shift_item.tooltip": "Может быть поставлен при нажатии Shift",
-
+  "item.extraordinary_extra_totems.totem_of_undying": "Тотем бессмертия",
+  "item.extraordinary_extra_totems.unstable_totem": "Нестабильный тотем бессмертия",
+  "item.extraordinary_extra_totems.unreliable_totem": "Ненадежный тотем бессмертия",
+  "item.extraordinary_extra_totems.confused_totem": "Непонятный тотем бессмертия",
+  "item.extraordinary_extra_totems.strange_totem": "Странный тотем бессмертия",
+  "item.extraordinary_extra_totems.fragile_totem": "Хрупкий тотем бессмертия",
+  "item.extraordinary_extra_totems.ominous_totem": "Мрачный тотем бессмертия",
   "effect.extraordinary_extra_totems.deaths_favor": "Услуга Смерти",
 
   "extraordinary_extra_totems.use_ominous_totem": "Мрачный тотем активирован",

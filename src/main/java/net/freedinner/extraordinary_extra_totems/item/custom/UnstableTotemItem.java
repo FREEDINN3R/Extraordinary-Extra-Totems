@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
@@ -13,14 +14,14 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class UnstableTotemBlockItem extends PlaceableOnShiftBlockItem {
-    public UnstableTotemBlockItem(Block block, Settings settings) {
-        super(block, settings);
+public class UnstableTotemItem extends Item {
+    public UnstableTotemItem(Settings settings) {
+        super(settings);
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if(!world.isClient && !user.isSneaking()) {
+        if(!world.isClient) {
             user.getItemCooldownManager().set(this, 20);
             explode(user.getStackInHand(hand), user);
         }
@@ -30,8 +31,11 @@ public class UnstableTotemBlockItem extends PlaceableOnShiftBlockItem {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        if(!context.getWorld().isClient && !context.getPlayer().isSneaking()) {
-            context.getPlayer().getItemCooldownManager().set(this, 20);
+        if(!context.getWorld().isClient) {
+            if (context.getPlayer() != null) {
+                context.getPlayer().getItemCooldownManager().set(this, 20);
+            }
+
             explode(context.getPlayer().getStackInHand(context.getHand()), context.getPlayer());
         }
 

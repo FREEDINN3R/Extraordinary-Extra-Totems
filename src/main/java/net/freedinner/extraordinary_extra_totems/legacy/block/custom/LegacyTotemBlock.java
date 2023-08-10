@@ -1,9 +1,12 @@
-package net.freedinner.extraordinary_extra_totems.block.custom;
+package net.freedinner.extraordinary_extra_totems.legacy.block.custom;
 
+import net.freedinner.extraordinary_extra_totems.ExtraordinaryExtraTotems;
 import net.minecraft.block.*;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
@@ -19,12 +22,12 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class TotemBlock extends HorizontalFacingBlock implements Waterloggable {
+public class LegacyTotemBlock extends HorizontalFacingBlock implements Waterloggable {
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     private static final VoxelShape SHAPE = Block.createCuboidShape(5, 0, 5, 11, 13, 11);
 
-    public TotemBlock(Settings settings) {
+    public LegacyTotemBlock(Settings settings) {
         super(settings);
         setDefaultState(getDefaultState()
                 .with(FACING, Direction.NORTH)
@@ -32,9 +35,14 @@ public class TotemBlock extends HorizontalFacingBlock implements Waterloggable {
     }
 
     @Override
+    public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
+        super.onPlaced(world, pos, state, placer, itemStack);
+        world.setBlockState(pos, Blocks.AIR.getDefaultState());
+    }
+
+    @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        BlockPos blockPos = pos.down();
-        return hasTopRim(world, blockPos) || sideCoversSmallSquare(world, blockPos, Direction.UP);
+        return false;
     }
 
     @Override

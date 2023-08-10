@@ -17,6 +17,6 @@ public abstract class BlocksMixin {
     @Inject(method = "<clinit>", at = @At("HEAD"))
     private static void onConstructor(CallbackInfo ci) {
         Block block = ModUtil.getDefaultTotemBlock();
-        ModUtil.VANILLA_TOTEM_BLOCK = Registry.register(Registries.BLOCK, new Identifier(ExtraordinaryExtraTotems.MOD_ID, "totem_of_undying"), block);
+        ModUtil.LEGACY_VANILLA_TOTEM_BLOCK = Registry.register(Registries.BLOCK, new Identifier(ExtraordinaryExtraTotems.MOD_ID, "totem_of_undying"), block);
     }
 }

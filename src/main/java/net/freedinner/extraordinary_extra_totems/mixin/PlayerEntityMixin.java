@@ -11,6 +11,7 @@ import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
@@ -18,10 +19,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin implements IPlayerDataSaver {
+    @Unique
     private final static String PLAYER_DATA_KEY = "extraordinary_extra_totems.playerData";
 
+    @Unique
     private int deathStareCooldown;
+    @Unique
     private NbtCompound persistentData;
+    @Unique
     private DamageSource onApplyDamage_damageSource;
 
     @Inject(method = "<init>", at = @At("TAIL"))

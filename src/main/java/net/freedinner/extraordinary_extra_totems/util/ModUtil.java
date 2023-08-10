@@ -1,7 +1,6 @@
 package net.freedinner.extraordinary_extra_totems.util;
 
-import net.freedinner.extraordinary_extra_totems.block.ModBlocks;
-import net.freedinner.extraordinary_extra_totems.block.custom.TotemBlock;
+import net.freedinner.extraordinary_extra_totems.legacy.block.custom.LegacyTotemBlock;
 import net.freedinner.extraordinary_extra_totems.item.ModItems;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -20,7 +19,7 @@ import java.util.Random;
 
 public class ModUtil {
     private static final Random r = new Random();
-    public static Block VANILLA_TOTEM_BLOCK;
+    public static Block LEGACY_VANILLA_TOTEM_BLOCK;
 
     public static void scatterRemnants(LivingEntity entity, int min, int max, boolean ominous) {
         Item item = (ominous) ? ModItems.OMINOUS_TOTEM_REMNANTS : ModItems.TOTEM_REMNANTS;
@@ -36,16 +35,16 @@ public class ModUtil {
     }
 
     public static boolean checkForModTotems(ItemStack itemStack, boolean takeChance) {
-        return itemStack.isOf(ModBlocks.OMINOUS_TOTEM.asItem()) ||
-                itemStack.isOf(ModBlocks.UNSTABLE_TOTEM.asItem()) ||
-                itemStack.isOf(ModBlocks.CONFUSED_TOTEM.asItem()) ||
-                itemStack.isOf(ModBlocks.STRANGE_TOTEM.asItem()) ||
-                itemStack.isOf(ModBlocks.FRAGILE_TOTEM.asItem()) ||
-                (itemStack.isOf(ModBlocks.UNRELIABLE_TOTEM.asItem()) && (!takeChance || r.nextInt(5) != 0));
+        return itemStack.isOf(ModItems.OMINOUS_TOTEM) ||
+                itemStack.isOf(ModItems.UNSTABLE_TOTEM) ||
+                itemStack.isOf(ModItems.CONFUSED_TOTEM) ||
+                itemStack.isOf(ModItems.STRANGE_TOTEM) ||
+                itemStack.isOf(ModItems.FRAGILE_TOTEM) ||
+                (itemStack.isOf(ModItems.UNRELIABLE_TOTEM) && (!takeChance || r.nextInt(5) != 0));
     }
 
     public static Block getDefaultTotemBlock() {
-        return new TotemBlock(FabricBlockSettings
+        return new LegacyTotemBlock(FabricBlockSettings
                 .of()
                 .mapColor(MapColor.GOLD)
                 .strength(0.5F)
@@ -53,7 +52,6 @@ public class ModUtil {
                 .sounds(BlockSoundGroup.NETHERITE)
                 .breakInstantly()
                 .noBlockBreakParticles()
-                .solid()
                 .nonOpaque());
     }
 

@@ -2,7 +2,6 @@ package net.freedinner.extraordinary_extra_totems.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.freedinner.extraordinary_extra_totems.ExtraordinaryExtraTotems;
-import net.freedinner.extraordinary_extra_totems.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
@@ -21,17 +20,17 @@ public class ModItemGroups {
                 new Identifier(ExtraordinaryExtraTotems.MOD_ID, "item_group"),
                 FabricItemGroup.builder()
                         .displayName(Text.translatable("extraordinary_extra_totems.item_group_name"))
-                        .icon(() -> new ItemStack(ModBlocks.OMINOUS_TOTEM))
+                        .icon(() -> new ItemStack(ModItems.OMINOUS_TOTEM))
                         .entries(((displayContext, entries) -> {
                             entries.add(ModItems.TOTEM_REMNANTS);
                             entries.add(ModItems.OMINOUS_TOTEM_REMNANTS);
 
-                            entries.add(ModBlocks.CONFUSED_TOTEM);
-                            entries.add(ModBlocks.FRAGILE_TOTEM);
-                            entries.add(ModBlocks.UNSTABLE_TOTEM);
-                            entries.add(ModBlocks.STRANGE_TOTEM);
-                            entries.add(ModBlocks.UNRELIABLE_TOTEM);
-                            entries.add(ModBlocks.OMINOUS_TOTEM);
+                            entries.add(ModItems.CONFUSED_TOTEM);
+                            entries.add(ModItems.FRAGILE_TOTEM);
+                            entries.add(ModItems.UNSTABLE_TOTEM);
+                            entries.add(ModItems.STRANGE_TOTEM);
+                            entries.add(ModItems.UNRELIABLE_TOTEM);
+                            entries.add(ModItems.OMINOUS_TOTEM);
                         }))
                         .build()
         );
@@ -46,12 +45,12 @@ public class ModItemGroups {
         }));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register((entries -> {
-            entries.add(ModBlocks.CONFUSED_TOTEM);
-            entries.add(ModBlocks.FRAGILE_TOTEM);
-            entries.add(ModBlocks.UNSTABLE_TOTEM);
-            entries.add(ModBlocks.STRANGE_TOTEM);
-            entries.add(ModBlocks.UNRELIABLE_TOTEM);
-            entries.add(ModBlocks.OMINOUS_TOTEM);
+            entries.add(ModItems.CONFUSED_TOTEM);
+            entries.add(ModItems.FRAGILE_TOTEM);
+            entries.add(ModItems.UNSTABLE_TOTEM);
+            entries.add(ModItems.STRANGE_TOTEM);
+            entries.add(ModItems.UNRELIABLE_TOTEM);
+            entries.add(ModItems.OMINOUS_TOTEM);
         }));
     }
 }

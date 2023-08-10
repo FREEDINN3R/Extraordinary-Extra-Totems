@@ -5,7 +5,6 @@
   "mixins": [
     "BlocksMixin",
     "ClientPlayNetworkHandlerMixin",
-    "ItemsMixin",
     "LivingEntityMixin",
     "MilkBucketItemMixin",
     "PlayerEntityMixin"

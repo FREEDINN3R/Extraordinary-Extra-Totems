@@ -4,16 +4,13 @@
   "item.extraordinary_extra_totems.totem_remnants": "Totemreste",
   "item.extraordinary_extra_totems.ominous_totem_remnants": "Unheilvolle Totemreste",
 
-  "block.extraordinary_extra_totems.totem_of_undying": "Totem der Unsterblichkeit",
-  "block.extraordinary_extra_totems.unstable_totem": "Instabiler Totem der Unsterblichkeit",
-  "block.extraordinary_extra_totems.unreliable_totem": "Unzuverlässiger Totem der Unsterblichkeit",
-  "block.extraordinary_extra_totems.confused_totem": "Verwirrter Totem der Unsterblichkeit",
-  "block.extraordinary_extra_totems.strange_totem": "Seltsamer Totem der Unsterblichkeit",
-  "block.extraordinary_extra_totems.fragile_totem": "Zerbrechlicher Totem der Unsterblichkeit",
-  "block.extraordinary_extra_totems.ominous_totem": "Unheilvoller Totem der Unsterblichkeit",
-
-  "item.extraordinary_extra_totems.shift_item.tooltip": "Kann beim Schleichen platziert werden",
-
+  "item.extraordinary_extra_totems.totem_of_undying": "Totem der Unsterblichkeit",
+  "item.extraordinary_extra_totems.unstable_totem": "Instabiler Totem der Unsterblichkeit",
+  "item.extraordinary_extra_totems.unreliable_totem": "Unzuverlässiger Totem der Unsterblichkeit",
+  "item.extraordinary_extra_totems.confused_totem": "Verwirrter Totem der Unsterblichkeit",
+  "item.extraordinary_extra_totems.strange_totem": "Seltsamer Totem der Unsterblichkeit",
+  "item.extraordinary_extra_totems.fragile_totem": "Zerbrechlicher Totem der Unsterblichkeit",
+  "item.extraordinary_extra_totems.ominous_totem": "Unheilvoller Totem der Unsterblichkeit",
   "effect.extraordinary_extra_totems.deaths_favor": "Gunst des Todes",
 
   "extraordinary_extra_totems.use_ominous_totem": "Unheilvoller Totem aktiviert",

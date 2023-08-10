@@ -1,7 +1,7 @@
 package net.freedinner.extraordinary_extra_totems.mixin;
 
-import net.freedinner.extraordinary_extra_totems.block.ModBlocks;
 import net.freedinner.extraordinary_extra_totems.effect.ModEffects;
+import net.freedinner.extraordinary_extra_totems.item.ModItems;
 import net.freedinner.extraordinary_extra_totems.util.ModUtil;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
@@ -14,12 +14,14 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
+    @Unique
     private DamageSource onApplyDamage_damageSource;
 
     @Inject(method = "tryUseTotem", at = @At("RETURN"), cancellable = true)
@@ -47,7 +49,7 @@ public abstract class LivingEntityMixin {
             return;
         }
 
-        if (source.isIn(DamageTypeTags.BYPASSES_INVULNERABILITY) && !itemStack.isOf(ModBlocks.OMINOUS_TOTEM.asItem())) {
+        if (source.isIn(DamageTypeTags.BYPASSES_INVULNERABILITY) && !itemStack.isOf(ModItems.OMINOUS_TOTEM)) {
             return;
         }
 
@@ -56,7 +58,7 @@ public abstract class LivingEntityMixin {
             Criteria.USED_TOTEM.trigger(serverPlayerEntity, itemStack);
         }
 
-        if (itemStack.isOf(ModBlocks.OMINOUS_TOTEM.asItem())) {
+        if (itemStack.isOf(ModItems.OMINOUS_TOTEM)) {
             ModUtil.scatterRemnants(entity, 1, 2, true);
         }
         else {
@@ -71,25 +73,25 @@ public abstract class LivingEntityMixin {
         entity.setHealth(1.0F);
         entity.clearStatusEffects();
 
-        if (itemStack.isOf(ModBlocks.UNSTABLE_TOTEM.asItem()) ||
-                itemStack.isOf(ModBlocks.FRAGILE_TOTEM.asItem()) ||
-                itemStack.isOf(ModBlocks.UNRELIABLE_TOTEM.asItem()) ||
-                itemStack.isOf(ModBlocks.CONFUSED_TOTEM.asItem())
+        if (itemStack.isOf(ModItems.UNSTABLE_TOTEM) ||
+                itemStack.isOf(ModItems.FRAGILE_TOTEM) ||
+                itemStack.isOf(ModItems.UNRELIABLE_TOTEM) ||
+                itemStack.isOf(ModItems.CONFUSED_TOTEM)
         ) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 900, 1));
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1));
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 800, 0));
 
-            if (itemStack.isOf(ModBlocks.CONFUSED_TOTEM.asItem()) && entity instanceof ServerPlayerEntity playerEntity) {
+            if (itemStack.isOf(ModItems.CONFUSED_TOTEM) && entity instanceof ServerPlayerEntity playerEntity) {
                 ModUtil.shufflePlayerInventory(playerEntity);
             }
         }
-        else if (itemStack.isOf(ModBlocks.STRANGE_TOTEM.asItem())) {
+        else if (itemStack.isOf(ModItems.STRANGE_TOTEM)) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 4));
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 600, 0));
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600, 2));
         }
-        else if (itemStack.isOf(ModBlocks.OMINOUS_TOTEM.asItem())) {
+        else if (itemStack.isOf(ModItems.OMINOUS_TOTEM)) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 80, 4, false, true));
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 600, 2, false, true));
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 50, 0, false, false));
@@ -121,7 +123,7 @@ public abstract class LivingEntityMixin {
         Hand[] handValues = Hand.values();
 
         for (Hand hand : handValues) {
-            if (entity.getStackInHand(hand).isOf(ModBlocks.FRAGILE_TOTEM.asItem())) {
+            if (entity.getStackInHand(hand).isOf(ModItems.FRAGILE_TOTEM)) {
                 return 0.5F;
             }
         }

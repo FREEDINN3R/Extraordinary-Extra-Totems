@@ -1,21 +1,16 @@
 package net.freedinner.extraordinary_extra_totems.data;
 
-import net.freedinner.extraordinary_extra_totems.ExtraordinaryExtraTotems;
-import net.freedinner.extraordinary_extra_totems.block.ModBlocks;
-import net.freedinner.extraordinary_extra_totems.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.freedinner.extraordinary_extra_totems.ExtraordinaryExtraTotems;
+import net.freedinner.extraordinary_extra_totems.item.ModItems;
 import net.minecraft.loot.LootPool;
-import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.KilledByPlayerLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
-import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.LootingEnchantLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.predicate.entity.EntityEquipmentPredicate;
-import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.util.Identifier;
 
 public class ModLootTablesModifier {
@@ -86,7 +81,7 @@ public class ModLootTablesModifier {
                         .with(ItemEntry.builder(ModItems.OMINOUS_TOTEM_REMNANTS)
                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)))
                                 .weight(9))
-                        .with(ItemEntry.builder(ModBlocks.OMINOUS_TOTEM)
+                        .with(ItemEntry.builder(ModItems.OMINOUS_TOTEM)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
                                 .weight(1));
                 tableBuilder.pool(poolBuilder.build());

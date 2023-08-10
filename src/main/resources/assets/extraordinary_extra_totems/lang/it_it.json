@@ -4,16 +4,13 @@
   "item.extraordinary_extra_totems.totem_remnants": "Resti di Totem",
   "item.extraordinary_extra_totems.ominous_totem_remnants": "Resti di Totem Inquietante",
 
-  "block.extraordinary_extra_totems.totem_of_undying": "Totem dell'Immortalità",
-  "block.extraordinary_extra_totems.unstable_totem": "Totem Instabile dell'Immortalità",
-  "block.extraordinary_extra_totems.unreliable_totem": "Totem Non Affidabile dell'Immortalità",
-  "block.extraordinary_extra_totems.confused_totem": "Totem Confuso dell'Immortalità",
-  "block.extraordinary_extra_totems.strange_totem": "Totem Strano dell'Immortalità",
-  "block.extraordinary_extra_totems.fragile_totem": "Totem Fragile dell'Immortalità",
-  "block.extraordinary_extra_totems.ominous_totem": "Totem Inquietante dell'Immortalità",
-
-  "item.extraordinary_extra_totems.shift_item.tooltip": "Posizionabile mentre si sta abbassati",
-
+  "item.extraordinary_extra_totems.totem_of_undying": "Totem dell'Immortalità",
+  "item.extraordinary_extra_totems.unstable_totem": "Totem Instabile dell'Immortalità",
+  "item.extraordinary_extra_totems.unreliable_totem": "Totem Non Affidabile dell'Immortalità",
+  "item.extraordinary_extra_totems.confused_totem": "Totem Confuso dell'Immortalità",
+  "item.extraordinary_extra_totems.strange_totem": "Totem Strano dell'Immortalità",
+  "item.extraordinary_extra_totems.fragile_totem": "Totem Fragile dell'Immortalità",
+  "item.extraordinary_extra_totems.ominous_totem": "Totem Inquietante dell'Immortalità",
   "effect.extraordinary_extra_totems.deaths_favor": "Favore della Morte",
 
   "extraordinary_extra_totems.use_ominous_totem": "Il totem inquietante si attiva",

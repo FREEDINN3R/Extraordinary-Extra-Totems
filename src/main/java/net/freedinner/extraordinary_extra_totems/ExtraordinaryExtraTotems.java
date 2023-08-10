@@ -1,6 +1,6 @@
 package net.freedinner.extraordinary_extra_totems;
 
-import net.freedinner.extraordinary_extra_totems.block.ModBlocks;
+import net.freedinner.extraordinary_extra_totems.legacy.block.ModBlocks;
 import net.freedinner.extraordinary_extra_totems.data.ModCustomTrades;
 import net.freedinner.extraordinary_extra_totems.data.ModLootTablesModifier;
 import net.freedinner.extraordinary_extra_totems.effect.ModEffects;

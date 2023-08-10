@@ -4,16 +4,13 @@
   "item.extraordinary_extra_totems.totem_remnants": "Restes de Totem",
   "item.extraordinary_extra_totems.ominous_totem_remnants": "Restes de Totem Ominous",
 
-  "block.extraordinary_extra_totems.totem_of_undying": "Totem de l'immortalité",
-  "block.extraordinary_extra_totems.unstable_totem": "Totem instable de l'immortalité",
-  "block.extraordinary_extra_totems.unreliable_totem": "Totem peu fiable de l'immortalité",
-  "block.extraordinary_extra_totems.confused_totem": "Totem confus de l'immortalité",
-  "block.extraordinary_extra_totems.strange_totem": "Totem étrange de l'immortalité",
-  "block.extraordinary_extra_totems.fragile_totem": "Totem fragile de l'immortalité",
-  "block.extraordinary_extra_totems.ominous_totem": "Totem Ominous de l'immortalité",
-
-  "item.extraordinary_extra_totems.shift_item.tooltip": "Peut être placé en étant accroupi",
-
+  "item.extraordinary_extra_totems.totem_of_undying": "Totem de l'immortalité",
+  "item.extraordinary_extra_totems.unstable_totem": "Totem instable de l'immortalité",
+  "item.extraordinary_extra_totems.unreliable_totem": "Totem peu fiable de l'immortalité",
+  "item.extraordinary_extra_totems.confused_totem": "Totem confus de l'immortalité",
+  "item.extraordinary_extra_totems.strange_totem": "Totem étrange de l'immortalité",
+  "item.extraordinary_extra_totems.fragile_totem": "Totem fragile de l'immortalité",
+  "item.extraordinary_extra_totems.ominous_totem": "Totem Ominous de l'immortalité",
   "effect.extraordinary_extra_totems.deaths_favor": "Faveur de la Mort",
 
   "extraordinary_extra_totems.use_ominous_totem": "Le totem Ominous s'active",
